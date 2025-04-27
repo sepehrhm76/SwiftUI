@@ -6,13 +6,35 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FECD32112DB12FD60092573E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FECD32102DB12FD60092573E /* CoreData.framework */; };
+		FECD32142DB130450092573E /* MyModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FECD32122DB130450092573E /* MyModel.xcdatamodeld */; };
+		FECD32162DB130780092573E /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD32152DB130780092573E /* Persistence.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		FE5F6C6B2CE354A000AB75D8 /* SwiftUILearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUILearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FECD32102DB12FD60092573E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FECD32132DB130450092573E /* MyModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyModel.xcdatamodel; sourceTree = "<group>"; };
+		FECD32152DB130780092573E /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FECD320E2DB12F7C0092573E /* Exceptions for "SwiftUILearning" folder in "SwiftUILearning" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = FE5F6C6A2CE354A000AB75D8 /* SwiftUILearning */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		FE5F6C6D2CE354A000AB75D8 /* SwiftUILearning */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FECD320E2DB12F7C0092573E /* Exceptions for "SwiftUILearning" folder in "SwiftUILearning" target */,
+			);
 			path = SwiftUILearning;
 			sourceTree = "<group>";
 		};
@@ -23,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FECD32112DB12FD60092573E /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,7 +55,10 @@
 		FE5F6C622CE354A000AB75D8 = {
 			isa = PBXGroup;
 			children = (
+				FECD32122DB130450092573E /* MyModel.xcdatamodeld */,
+				FECD32152DB130780092573E /* Persistence.swift */,
 				FE5F6C6D2CE354A000AB75D8 /* SwiftUILearning */,
+				FECD320F2DB12FD60092573E /* Frameworks */,
 				FE5F6C6C2CE354A000AB75D8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +69,14 @@
 				FE5F6C6B2CE354A000AB75D8 /* SwiftUILearning.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FECD320F2DB12FD60092573E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FECD32102DB12FD60092573E /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +153,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FECD32162DB130780092573E /* Persistence.swift in Sources */,
+				FECD32142DB130450092573E /* MyModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +291,7 @@
 				DEVELOPMENT_TEAM = 35S7HUEQGP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUILearning/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,6 +321,7 @@
 				DEVELOPMENT_TEAM = 35S7HUEQGP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUILearning/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -324,6 +362,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FECD32122DB130450092573E /* MyModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FECD32132DB130450092573E /* MyModel.xcdatamodel */,
+			);
+			currentVersion = FECD32132DB130450092573E /* MyModel.xcdatamodel */;
+			path = MyModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FE5F6C632CE354A000AB75D8 /* Project object */;
 }
