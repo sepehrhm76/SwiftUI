@@ -28,7 +28,7 @@ import SwiftUI
 //}
 
 class UserSettings: ObservableObject {
-    @Published var username: String = "Guest"
+    @Published var username: String = "Type here"
 }
 
 struct EnvironmentObjectTest: View {

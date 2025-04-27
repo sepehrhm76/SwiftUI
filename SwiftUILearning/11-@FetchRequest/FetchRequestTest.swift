@@ -13,15 +13,15 @@
 
 import SwiftUI
 
-@main
-struct SwiftUILearningApp: App {
-    var body: some Scene {
-        WindowGroup {
-            FetchRequestTest()
-//                .environment(<#T##object: (Observable & AnyObject)?##(Observable & AnyObject)?#>)
-        }
-    }
-}
+//@main
+//struct SwiftUILearningApp: App {
+//    var body: some Scene {
+//        WindowGroup {
+//            FetchRequestTest()
+////                .environment(<#T##object: (Observable & AnyObject)?##(Observable & AnyObject)?#>)
+//        }
+//    }
+//}
 
 struct FetchRequestTest: View {
     
