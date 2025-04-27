@@ -19,6 +19,10 @@ struct MainView: View {
                 NavigationLink("@StateObject Example", destination: StateObjectTest())
                 NavigationLink("@StateObject Vs @ObservedObject Example", destination: StateObjectVSObservedObject())
                 NavigationLink("@EnvironmentObject Example", destination: EnvironmentObjectTest().environmentObject(settings))
+                NavigationLink("@GestureState Example", destination: GestureStateTest())
+                NavigationLink("@FocusState Example", destination: FocusStateTest())
+                NavigationLink("@Environment Example", destination: EnvironmentTest())
+                NavigationLink("@FetchRequest Example", destination: FetchRequestTest())
             }
             .navigationTitle("SwiftUI Learning")
         }
